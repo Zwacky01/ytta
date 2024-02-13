@@ -57,7 +57,9 @@ function generateMessage(noCount) {
 function changeImage(image) {
   if (!(noCount > MAX_IMAGES)) {
      catImg.src = `img/cat-${image}.jpg`;
+     console.log(noCount, MAX_IMAGES);
   } else {
+     console.log(noCount, MAX_IMAGES);
      catImg.src = `img/cat-yes.gif`;
   }
  
