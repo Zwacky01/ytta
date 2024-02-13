@@ -61,6 +61,7 @@ function changeImage(image) {
   } else {
      console.log(noCount, MAX_IMAGES);
      catImg.src = `img/cat-yes.gif`;
+     play = false;
   }
  
 }
