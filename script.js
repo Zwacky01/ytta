@@ -20,7 +20,7 @@ noButton.addEventListener("click", function () {
     changeImage(imageIndex);
     resizeYesButton();
     updateNoButtonText();
-    if (noCount === MAX_IMAGES) {
+    if (noCount === (MAX_IMAGES + 1) ) {
       play = false;
     }
   }
