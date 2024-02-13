@@ -55,7 +55,12 @@ function generateMessage(noCount) {
 }
 
 function changeImage(image) {
-  catImg.src = `img/cat-${image}.jpg`;
+  if (!(noCount >= MAX_IMAGES)) {
+     catImg.src = `img/cat-${image}.jpg`;
+  } else {
+     catImg.src = `img/cat-yes.gif`;
+  }
+ 
 }
 
 function updateNoButtonText() {
