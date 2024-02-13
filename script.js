@@ -55,7 +55,7 @@ function generateMessage(noCount) {
 }
 
 function changeImage(image) {
-  if (!(noCount > MAX_IMAGES)) {
+  if (!(noCount > 6)) {
      catImg.src = `img/cat-${image}.jpg`;
      console.log(noCount, MAX_IMAGES);
   } else {
