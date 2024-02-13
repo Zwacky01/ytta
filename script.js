@@ -20,9 +20,9 @@ noButton.addEventListener("click", function () {
     changeImage(imageIndex);
     resizeYesButton();
     updateNoButtonText();
-    // if (noCount === (MAX_IMAGES + 1) ) {
-    //   play = false;
-    // }
+    if (noCount === MAX_IMAGES ) {
+      play = false;
+    }
   }
 });
 
@@ -55,15 +55,11 @@ function generateMessage(noCount) {
 }
 
 function changeImage(image) {
-  if (!(noCount == 6)) {
-     catImg.src = `img/cat-${image}.jpg`;
-     console.log(noCount, MAX_IMAGES);
+  if (image == "yes") {
+      catImg.src = `img/cat-${image}.gif`; 
   } else {
-     console.log(noCount, MAX_IMAGES);
-     catImg.src = `img/cat-yes.gif`;
-     play = false;
+    catImg.src = `img/cat-${image}.jpg`; 
   }
- 
 }
 
 function updateNoButtonText() {
